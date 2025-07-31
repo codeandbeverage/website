@@ -1,16 +1,33 @@
 ---
+import WeeklyPost from "../components/weekly-post.astro";
+import { getCollection, getEntry } from "astro:content";
+import "../styles/global.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import Pagination from "../components/pagination.astro";
 
+const allNewsletter = await getCollection("newsletter");
+const sortedNewsletter = allNewsletter.sort(
+	(a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+);
+const latestNewsletter = sortedNewsletter[0];
+const pageTitle = `Week #${sortedNewsletter.length}`;
+const contentData = latestNewsletter.data;
+const pageDate = new Date(contentData.date).toLocaleDateString("en-US", {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+});
+const prevURL =
+	sortedNewsletter.length > 1 && sortedNewsletter.at(-1)
+		? `/week/${sortedNewsletter.length - 1}`
+		: null;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+	<WeeklyPost
+		pageTitle={pageTitle}
+		contentData={contentData}
+		pageDate={pageDate}
+	/>
+	{prevURL && <Pagination nextURL={null} prevURL={prevURL} />}
+</MainLayout>

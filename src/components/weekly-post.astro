@@ -1,0 +1,45 @@
+---
+const { pageTitle, pageDate, contentData } = Astro.props;
+---
+
+<div class="py-6">
+    <div class="flex flex-col mb-4">
+        <h2 class="text-2xl font-bold">{pageTitle}</h2>
+        <time date={contentData.date} class="text-sm text-neutral-700"
+            >{pageDate}</time
+        >
+    </div>
+    <div class="flex flex-col gap-6">
+        {
+            contentData.content.map((post) => (
+                <div class="grid grid-cols-[200px_1fr] gap-4">
+                    <a href={post.link}>
+                        <div class="relative">
+                            <img
+                                src={post.image}
+                                width="200"
+                                height="150"
+                                alt=""
+                                class="rounded-lg vertical-align-middle"
+                            />
+                            <div class="absolute bottom-1 right-1 text-white px-1 py-1 bg-black/70 rounded-sm text-xs font-semibold">
+                                {post.duration}
+                            </div>
+                        </div>
+                    </a>
+                    <div class="flex flex-col gap-1 py-1">
+                        <a
+                            href={post.link}
+                            class="text-lg font-semibold hover:underline"
+                        >
+                            {post.title}
+                        </a>
+                        <p class="text-sm text-neutral-700">
+                            {post.description}
+                        </p>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</div>

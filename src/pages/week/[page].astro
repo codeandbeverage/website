@@ -1,0 +1,33 @@
+---
+import WeeklyPost from "../../components/weekly-post.astro";
+import { getCollection } from "astro:content";
+import "../../styles/global.css";
+import MainLayout from "../../layouts/MainLayout.astro";
+import ArrowLeftIcon from "../../icons/arrow-left.svg";
+import ArrowRightIcon from "../../icons/arrow-right.svg";
+import Pagination from "../../components/pagination.astro";
+
+export async function getStaticPaths({ paginate }) {
+    const allNewsletter = await getCollection("newsletter");
+
+    return paginate(allNewsletter, { pageSize: 1 });
+}
+
+const { page } = Astro.props;
+const pageTitle = `Week #${page.currentPage}`;
+const contentData = page.data[0].data;
+const pageDate = new Date(contentData.date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+});
+---
+
+<MainLayout>
+    <WeeklyPost
+        pageTitle={pageTitle}
+        contentData={contentData}
+        pageDate={pageDate}
+    />
+    <Pagination nextURL={page.url.next} prevURL={page.url.prev} />
+</MainLayout>
