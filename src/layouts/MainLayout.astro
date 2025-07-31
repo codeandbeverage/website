@@ -13,23 +13,26 @@ import "../styles/global.css";
         <title>Code & Beverage</title>
         <Posthog />
     </head>
-    <body class="container max-w-3xl mx-auto py-4">
+    <body class="container max-w-3xl mx-auto py-4 bg-slate-100">
         <div class="relative rounded-3xl overflow-hidden">
             <img src="/hero.png" alt="" class="rounded-inherit" />
             <div
-                class="flex bottom-0 left-0 h-[8rem] w-full absolute bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0)]"
+                class="flex bottom-0 left-0 h-[15rem] w-full absolute bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0)]"
             >
             </div>
             <div
-                class="flex flex-col gap-1 absolute bottom-6 left-5 text-slate-50"
+                class="flex flex-col gap-2 absolute bottom-6 left-5 text-slate-50"
             >
                 <h1 class="text-3xl font-bold">Code & Beverage</h1>
-                <p>Learn something new while enjoying your favorite beverage</p>
+                <p class="max-w-[50ch] text-neutral-300">
+                    Your weekly dose of videos about Web Development, to learn
+                    something new while enjoying your favorite beverage
+                </p>
             </div>
         </div>
         <main class="px-5 mb-10">
             <slot />
-            <!-- <Support /> -->
+            <Support />
         </main>
     </body>
 </html>
