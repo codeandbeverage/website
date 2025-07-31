@@ -3,31 +3,38 @@
     "content": [
         {
             "title": "Let Users Pick ANY Color and Your WHOLE Website CHANGES!",
-            "description": "Learn how to let users customize your website's color scheme with just a few lines of CSS.",
+            "description": "Learn how to make colors on your website dynamic and let users pick any color they want. Really powerfull CSS stuff!",
             "link": "https://www.youtube.com/watch?v=7YaWnHVl7Hk",
             "image": "/src/images/newsletter/2025-08-01/let-users-pick-website-color.jpg",
             "duration": "8:18"
         },
         {
             "title": "Spice Up Your Site with Quick & Easy Theme Transitions",
-            "description": "People love light/dark mode, but switching between them can be jarring. Learn how to make smooth transitions with CSS.",
+            "description": "Want to be creative with your website's theme transitions? This video will show you how to utilize ::view-transition sudo-element to create different theme transitions",
             "link": "https://www.youtube.com/watch?v=vHFZFXtjKNE",
-            "image": "/src/images/newsletter/2025-08-01/light-dark-transitions.png",
+            "image": "/src/images/newsletter/2025-08-01/light-dark-transitions.jpeg",
             "duration": "12:38"
         },
         {
-            "title": "Watch this if you use shadcn/ui",
-            "description": "Find out what's new with Radix and why it's important for shadcn/ui users.",
-            "link": "https://www.youtube.com/watch?v=vHFZFXtjKNE",
-            "image": "/src/images/newsletter/2025-08-01/shadcn.jpg",
-            "duration": "24:33"
+            "title": "Every React Concept Explained in 12 Minutes",
+            "description": "Are you lost in React? This video will explain all the concepts of React in just 12 minutes. Perfect for beginners and those who want a quick refresher.",
+            "link": "https://www.youtube.com/watch?v=wIyHSOugGGw",
+            "image": "/src/images/newsletter/2025-08-01/every-react-concept.jpg",
+            "duration": "11:52"
         },
         {
-            "title": "Seems that not enough people know about these pseudo-elements",
-            "description": "Have you ever used these pseudo-elements? They can be very useful in your CSS toolkit.",
-            "link": "https://www.youtube.com/watch?v=vHFZFXtjKNE",
-            "image": "/src/images/newsletter/2025-08-01/pseudo-element.png",
-            "duration": "7:47"
+            "title": "What's new in web UI",
+            "description": "Are you ready to explore the latest trends in web interfaces? This is the right video to explore our future of web UI.",
+            "link": "https://www.youtube.com/watch?v=VTCIStB6y8s",
+            "image": "/src/images/newsletter/2025-08-01/what-is-new-in-web-dev.jpg",
+            "duration": "48:55"
+        },
+        {
+            "title": "The Web Dev Hack NOBODY is Talking About",
+            "description": "Have you ever mocked API responses in your local code? Here's a better way to do this with Chrome Dev Tool that you probably didn't know about.",
+            "link": "https://www.youtube.com/watch?v=F1oKEe0rDjk",
+            "image": "/src/images/newsletter/2025-08-01/useful-chrome-dev-tool.jpg",
+            "duration": "10:06"
         }
     ]
 }

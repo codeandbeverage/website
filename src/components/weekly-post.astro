@@ -6,8 +6,6 @@ const { pageTitle, pageDate, contentData } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
     "/src/images/newsletter/**/*.{jpeg,jpg,png}",
 );
-
-console.log(images);
 ---
 
 <div class="py-6">
@@ -32,7 +30,7 @@ console.log(images);
                                 width="400"
                                 height="300"
                                 alt=""
-                                class="w-full rounded-lg vertical-align-middle"
+                                class="w-full rounded-lg vertical-align-middle shadow-sm border border-4 border-white"
                             />
                             <div class="absolute bottom-1 right-1 text-white px-1 py-1 bg-black/70 rounded-sm text-xs font-semibold">
                                 {post.duration}
@@ -62,7 +60,6 @@ console.log(images);
     const posts = document.querySelectorAll("[data-post='true']");
     posts.forEach((post) => {
         const postTitle = post.getAttribute("data-posthog-title");
-        console.log("HELLO", postTitle);
         post.addEventListener("click", () => {
             window.posthog.capture("clicked_on_video_link", {
                 title: postTitle,
