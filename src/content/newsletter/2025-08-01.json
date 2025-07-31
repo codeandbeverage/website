@@ -5,28 +5,28 @@
             "title": "Let Users Pick ANY Color and Your WHOLE Website CHANGES!",
             "description": "Learn how to let users customize your website's color scheme with just a few lines of CSS.",
             "link": "https://www.youtube.com/watch?v=7YaWnHVl7Hk",
-            "image": "/public/images/newsletter/2025-08-01/let-users-pick-website-color.jpg",
+            "image": "/images/newsletter/2025-08-01/let-users-pick-website-color.jpg",
             "duration": "8:18"
         },
         {
             "title": "Spice Up Your Site with Quick & Easy Theme Transitions",
             "description": "People love light/dark mode, but switching between them can be jarring. Learn how to make smooth transitions with CSS.",
             "link": "https://www.youtube.com/watch?v=vHFZFXtjKNE",
-            "image": "/public/images/newsletter/2025-08-01/light-dark-transitions.png",
+            "image": "/images/newsletter/2025-08-01/light-dark-transitions.png",
             "duration": "12:38"
         },
         {
             "title": "Watch this if you use shadcn/ui",
             "description": "Find out what's new with Radix and why it's important for shadcn/ui users.",
             "link": "https://www.youtube.com/watch?v=vHFZFXtjKNE",
-            "image": "/public/images/newsletter/2025-08-01/shadcn.png",
+            "image": "/images/newsletter/2025-08-01/shadcn.png",
             "duration": "24:33"
         },
         {
             "title": "Seems that not enough people know about these pseudo-elements",
             "description": "Have you ever used these pseudo-elements? They can be very useful in your CSS toolkit.",
             "link": "https://www.youtube.com/watch?v=vHFZFXtjKNE",
-            "image": "/public/images/newsletter/2025-08-01/pseudo-element.png",
+            "image": "/images/newsletter/2025-08-01/pseudo-element.png",
             "duration": "7:47"
         }
     ]

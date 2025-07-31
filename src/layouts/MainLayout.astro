@@ -1,4 +1,5 @@
 ---
+import Posthog from "../components/posthog.astro";
 import Support from "../components/support.astro";
 import "../styles/global.css";
 ---
@@ -10,10 +11,11 @@ import "../styles/global.css";
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>Code & Beverage</title>
+        <Posthog />
     </head>
     <body class="container max-w-3xl mx-auto py-4">
         <div class="relative rounded-3xl overflow-hidden">
-            <img src="/public/hero.png" alt="" class="rounded-inherit" />
+            <img src="/hero.png" alt="" class="rounded-inherit" />
             <div
                 class="flex bottom-0 left-0 h-[8rem] w-full absolute bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0)]"
             >

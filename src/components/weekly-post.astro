@@ -13,7 +13,11 @@ const { pageTitle, pageDate, contentData } = Astro.props;
         {
             contentData.content.map((post) => (
                 <div class="grid grid-cols-[200px_1fr] gap-4">
-                    <a href={post.link}>
+                    <a
+                        href={post.link}
+                        data-post="true"
+                        data-posthog-title={post.title}
+                    >
                         <div class="relative">
                             <img
                                 src={post.image}
@@ -30,6 +34,8 @@ const { pageTitle, pageDate, contentData } = Astro.props;
                     <div class="flex flex-col gap-1 py-1">
                         <a
                             href={post.link}
+                            data-post="true"
+                            data-posthog-title={post.title}
                             class="text-lg font-semibold hover:underline"
                         >
                             {post.title}
@@ -43,3 +49,16 @@ const { pageTitle, pageDate, contentData } = Astro.props;
         }
     </div>
 </div>
+
+<script>
+    const posts = document.querySelectorAll("[data-post='true']");
+    posts.forEach((post) => {
+        const postTitle = post.getAttribute("data-posthog-title");
+        console.log("HELLO", postTitle);
+        post.addEventListener("click", () => {
+            window.posthog.capture("clicked_on_video_link", {
+                title: postTitle,
+            });
+        });
+    });
+</script>
