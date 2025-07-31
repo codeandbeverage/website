@@ -1,5 +1,6 @@
 ---
-
+import { Image } from "astro:assets";
+import supportImage from "../images/support.png";
 ---
 
 <div
@@ -7,9 +8,12 @@
 >
     <div class="flex justify-center">
         <div class="aspect-square overflow-hidden h-[152px]">
-            <img
-                src="/support.png"
+            <Image
+                src={supportImage}
+                alt=""
                 class="object-cover w-full h-full rounded-full"
+                width="1536"
+                height="1024"
             />
         </div>
     </div>
@@ -23,6 +27,5 @@
                 >buymeacoffee.com/codeandbeverage​</a
             >.
         </p>
-        <!-- <img src="/support-qr-code.png" /> -->
     </div>
 </div>

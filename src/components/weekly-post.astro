@@ -1,5 +1,13 @@
 ---
+import { Image } from "astro:assets";
+
 const { pageTitle, pageDate, contentData } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/images/newsletter/**/*.{jpeg,jpg,png}",
+);
+
+console.log(images);
 ---
 
 <div class="py-6">
@@ -19,8 +27,8 @@ const { pageTitle, pageDate, contentData } = Astro.props;
                         data-posthog-title={post.title}
                     >
                         <div class="relative">
-                            <img
-                                src={post.image}
+                            <Image
+                                src={images[post.image]()}
                                 width="400"
                                 height="300"
                                 alt=""
