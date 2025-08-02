@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import Posthog from "../components/posthog.astro";
+import Support from "../components/support.astro";
+import "../styles/global.css";
+import heroImage from "../images/hero.png";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Code & Beverage</title>
+        <meta
+            name="description"
+            content="Your weekly dose of videos about Web Development, to learn something new while enjoying your favorite beverage"
+        />
+    </head>
+    <body class="bg-slate-100">
+        <main>
+            <slot />
+        </main>
+    </body>
+</html>
