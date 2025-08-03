@@ -6,11 +6,14 @@ export async function GET(context) {
     const sortedNewsletter = allNewsletter.sort(
         (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
     );
-    const items = sortedNewsletter.flatMap(week => week.data.content.map(post => ({
-        title: post.title,
-        description: post.description,
-        link: post.link
-    })));
+
+    const numberOfWeeks = sortedNewsletter.length;
+    const items = sortedNewsletter.map((week, index) => ({
+        title: `Week ${numberOfWeeks - index} - It's time to level up your skills!`,
+        description: week.data.description,
+        link: `/week/${numberOfWeeks - index}`,
+        pubDate: new Date(week.data.date),
+    }));
 
     return rss({
         title: 'Code & Beverage',
