@@ -10,7 +10,7 @@ export async function GET(context) {
     const numberOfWeeks = sortedNewsletter.length;
     const items = sortedNewsletter.map((week, index) => ({
         title: `Week ${numberOfWeeks - index} - It's time to level up your skills!`,
-        description: week.data.description,
+        description: 'You can find full list of videos in the weekly post on our website.',
         link: `/week/${numberOfWeeks - index}`,
         pubDate: new Date(week.data.date),
     }));
