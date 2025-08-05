@@ -17,41 +17,47 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     </div>
     <div class="flex flex-col gap-10 sm:gap-6">
         {
-            contentData.content.map((post) => (
-                <div class="flex flex-col sm:grid sm:grid-cols-[200px_1fr] gap-4">
-                    <a
-                        href={post.link}
-                        data-post="true"
-                        data-posthog-title={post.title}
-                    >
-                        <div class="relative">
-                            <Image
-                                src={images[post.image]()}
-                                width="400"
-                                height="300"
-                                alt=""
-                                class="w-full rounded-lg vertical-align-middle shadow-sm border border-4 border-white"
-                            />
-                            <div class="absolute bottom-1 right-1 text-white px-1 py-1 bg-black/70 rounded-sm text-xs font-semibold">
-                                {post.duration}
-                            </div>
-                        </div>
-                    </a>
-                    <div class="flex flex-col gap-1 py-1">
+            contentData.content.map((post) => {
+                const postLink = post.link.includes("?")
+                    ? `${post.link}&utm_source=codeandbeverage`
+                    : `${post.link}?utm_source=codeandbeverage`;
+
+                return (
+                    <div class="flex flex-col sm:grid sm:grid-cols-[200px_1fr] gap-4">
                         <a
-                            href={post.link}
+                            href={postLink}
                             data-post="true"
                             data-posthog-title={post.title}
-                            class="text-lg font-semibold hover:underline"
                         >
-                            {post.title}
+                            <div class="relative">
+                                <Image
+                                    src={images[post.image]()}
+                                    width="400"
+                                    height="300"
+                                    alt=""
+                                    class="w-full rounded-lg vertical-align-middle shadow-sm border border-4 border-white"
+                                />
+                                <div class="absolute bottom-1 right-1 text-white px-1 py-1 bg-black/70 rounded-sm text-xs font-semibold">
+                                    {post.duration}
+                                </div>
+                            </div>
                         </a>
-                        <p class="text-sm text-neutral-700">
-                            {post.description}
-                        </p>
+                        <div class="flex flex-col gap-1 py-1">
+                            <a
+                                href={postLink}
+                                data-post="true"
+                                data-posthog-title={post.title}
+                                class="text-lg font-semibold hover:underline"
+                            >
+                                {post.title}
+                            </a>
+                            <p class="text-sm text-neutral-700">
+                                {post.description}
+                            </p>
+                        </div>
                     </div>
-                </div>
-            ))
+                );
+            })
         }
     </div>
 </div>
