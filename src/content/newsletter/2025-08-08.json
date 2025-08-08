@@ -1,0 +1,40 @@
+{
+    "date": "2025-08-08",
+    "content": [
+        {
+            "title": "9 NEW JavaScript Features in ES2025",
+            "description": "Sometimes, the best way to be top engineer is to know the latest features of the language you work with.",
+            "link": "https://www.youtube.com/watch?v=1-cjrEMj_us",
+            "image": "/src/images/newsletter/2025-08-08/new-features-in-es2025.jpg",
+            "duration": "15:22"
+        },
+        {
+            "title": "Build a scroll spy in 2 lines of CSS with scroll-target-group and :target-current",
+            "description": "Go and check how to highlights navigation links based on the current section in view using only CSS. No JavaScript needed!",
+            "link": "https://www.youtube.com/watch?v=nEJ97XJhIP8",
+            "image": "/src/images/newsletter/2025-08-08/css-only-scroll-spy.jpg",
+            "duration": "2:56"
+        },
+        {
+            "title": "Is HTML the hardest language?",
+            "description": "A great explanation of why HTML is not that easy as it seems and learn how to be better at it.",
+            "link": "https://www.youtube.com/watch?v=PGvgdZuQu6w",
+            "image": "/src/images/newsletter/2025-08-08/is-html-the-hardest-language.jpg",
+            "duration": "32:58"
+        },
+        {
+            "title": "6 TypeScript tips to turn you into a WIZARD",
+            "description": "You're probably using TypeScript in your project, but what if I tell you there's something great in that video that you will really love?",
+            "link": "https://www.youtube.com/watch?v=lraHlXpuhKs",
+            "image": "/src/images/newsletter/2025-08-08/typescript-tips.jpg",
+            "duration": "15:55"
+        },
+        {
+            "title": "This CSS Update Revolutionizes CSS For Me - attr() Function Update",
+            "description": "You now about attr() function, right? But did you know what it can do now? Believe me, it is a game changer!",
+            "link": "https://www.youtube.com/watch?v=WcNWf6edIcc",
+            "image": "/src/images/newsletter/2025-08-08/css-attr-function.jpg",
+            "duration": "8:01"
+        }
+    ]
+}
