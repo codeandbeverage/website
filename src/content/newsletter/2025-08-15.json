@@ -1,0 +1,40 @@
+{
+  "date": "2025-08-15",
+  "content": [
+    {
+      "title": "TypeScript 5.9: Lazy Imports Are Finally Here (and more)",
+      "description": "A neat new TypeScript update you'll probably want to start using.",
+      "link": "https://www.youtube.com/watch?v=BkzKn4EYjcM",
+      "image": "/src/images/newsletter/2025-08-15/BkzKn4EYjcM.jpg",
+      "duration": "4:40"
+    },
+    {
+      "title": "2 better alternatives to overflow: hidden",
+      "description": "This video saved me hours of work - seriously, most developers don't even know this exists.",
+      "link": "https://www.youtube.com/watch?v=72pUm4tQesw",
+      "image": "/src/images/newsletter/2025-08-15/72pUm4tQesw.jpg",
+      "duration": "11:04"
+    },
+    {
+      "title": "Introduction to Container Queries",
+      "description": "Container Queries can be confusing - but not after this.",
+      "link": "https://www.youtube.com/watch?v=TxtvkKe20Rs",
+      "image": "/src/images/newsletter/2025-08-15/TxtvkKe20Rs.jpg",
+      "duration": "5:32"
+    },
+    {
+      "title": "Learn CSS Subgrid in 14 minutes",
+      "description": "Struggling with grid alignment? This forgotten CSS feature is the fix you've been missing.",
+      "link": "https://www.youtube.com/watch?v=Yl8hg2FG20Q",
+      "image": "/src/images/newsletter/2025-08-15/Yl8hg2FG20Q.jpg",
+      "duration": "14:19"
+    },
+    {
+      "title": "CSS Debugging Tips",
+      "description": "You know how to debug JavaScript - but what about CSS? These tricks and browser tools will change the game.",
+      "link": "https://www.youtube.com/watch?v=2ThuIqMMJJc",
+      "image": "/src/images/newsletter/2025-08-15/2ThuIqMMJJc.jpg",
+      "duration": "15:36"
+    }
+  ]
+}
