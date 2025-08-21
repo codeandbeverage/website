@@ -1,0 +1,40 @@
+{
+  "date": "2025-08-22",
+  "content": [
+    {
+      "title": "Webpack vs Vite vs Parcel vs esbuild - Best Bundler for Beginners",
+      "description": "Have you ever wondered what bundler to choose? Watch this video to learn about your options",
+      "link": "https://www.youtube.com/watch?v=i9Xq8aExZr4",
+      "image": "/src/images/newsletter/2025-08-22/i9Xq8aExZr4.jpg",
+      "duration": "14:13"
+    },
+    {
+      "title": "The ULTIMATE VS Code Setup - Extensions & Settings 2025",
+      "description": "If you're using VSCode, Cursor, or Windsurf, here's a useful video to set up your IDE and be more productive coder",
+      "link": "https://www.youtube.com/watch?v=lxRAj1Gijic",
+      "image": "/src/images/newsletter/2025-08-22/lxRAj1Gijic.jpg",
+      "duration": "15:23"
+    },
+    {
+      "title": "Configure your Git",
+      "description": "Feel confident in Git basisc? Here's a couple of productivity tips for you.",
+      "link": "https://www.youtube.com/watch?v=G3NJzFX6XhY",
+      "image": "/src/images/newsletter/2025-08-22/G3NJzFX6XhY.jpg",
+      "duration": "14:03"
+    },
+    {
+      "title": "3 Amazing New TanStack Query Features!",
+      "description": "Learn new ways of using TanStack Query and impress your co-workers",
+      "link": "https://www.youtube.com/watch?v=EujzNb2iu3w",
+      "image": "/src/images/newsletter/2025-08-22/EujzNb2iu3w.jpg",
+      "duration": "11:56"
+    },
+    {
+      "title": "Make this fun effect that follows your cursor (pure CSS)",
+      "description": "Improve your anchoring skills with this tutorial and learn new tricks for your next navigation menu",
+      "link": "https://www.youtube.com/watch?v=8_NQ7ARXz8c",
+      "image": "/src/images/newsletter/2025-08-22/8_NQ7ARXz8c.jpg",
+      "duration": "26:22"
+    }
+  ]
+}
